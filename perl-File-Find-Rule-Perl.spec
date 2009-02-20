@@ -1,5 +1,5 @@
 %define realname   File-Find-Rule-Perl
-%define version    1.04
+%define version    1.05
 %define release    %mkrel 1
 
 Name:       perl-%{realname}
@@ -12,6 +12,7 @@ Source:     http://www.cpan.org/modules/by-module/File/%{realname}-%{version}.ta
 Url:        http://search.cpan.org/dist/%{realname}
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: perl-devel
+BuildRequires: perl(Parse::CPAN::Meta)
 BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl(File::Find::Rule)
 BuildRequires: perl(File::Spec)
