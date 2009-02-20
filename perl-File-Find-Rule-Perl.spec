@@ -16,6 +16,7 @@ BuildRequires: perl(Parse::CPAN::Meta)
 BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl(File::Find::Rule)
 BuildRequires: perl(File::Spec)
+BuildRequires: perl(Params::Util)
 BuildRequires: perl(Test::More)
 
 BuildArch: noarch
