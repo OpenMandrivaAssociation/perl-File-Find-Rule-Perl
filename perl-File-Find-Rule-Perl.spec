@@ -1,24 +1,23 @@
-%define realname   File-Find-Rule-Perl
-%define version    1.07
-%define release    %mkrel 1
+%define upstream_name    File-Find-Rule-Perl
+%define upstream_version 1.08
 
-Name:       perl-%{realname}
-Version:    %{version}
-Release:    %{release}
-License:    GPL or Artistic
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
+License:    GPL+ or Artistic
 Group:      Development/Perl
 Summary:    Common rules for searching for Perl things
-Source:     http://www.cpan.org/modules/by-module/File/%{realname}-%{version}.tar.gz
-Url:        http://search.cpan.org/dist/%{realname}
-BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires: perl-devel
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/File/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires: perl(Parse::CPAN::Meta)
 BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl(File::Find::Rule)
 BuildRequires: perl(File::Spec)
 BuildRequires: perl(Params::Util)
 BuildRequires: perl(Test::More)
-
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 BuildArch: noarch
 
 %description
@@ -30,7 +29,7 @@ File::Find::Rule manpage pattern.
 files.
 
 %prep
-%setup -q -n %{realname}-%{version} 
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
