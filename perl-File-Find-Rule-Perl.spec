@@ -1,5 +1,5 @@
 %define upstream_name    File-Find-Rule-Perl
-%define upstream_version 1.08
+%define upstream_version 1.09
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -17,8 +17,8 @@ BuildRequires: perl(File::Find::Rule)
 BuildRequires: perl(File::Spec)
 BuildRequires: perl(Params::Util)
 BuildRequires: perl(Test::More)
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 BuildArch: noarch
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 I write a lot of things that muck with Perl files. And it always annoyed me
