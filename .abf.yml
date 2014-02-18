@@ -1,2 +1,4 @@
+removed_sources:
+  File-Find-Rule-Perl-1.10.tar.gz: b9f6e1051b4d1ab223f361981141a78e1a29711c
 sources:
-  "File-Find-Rule-Perl-1.10.tar.gz": b9f6e1051b4d1ab223f361981141a78e1a29711c
+  File-Find-Rule-Perl-1.13.tar.gz: d6dee19806de7db7608c80530acb2c0e18ac083d
