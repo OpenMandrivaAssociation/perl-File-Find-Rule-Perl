@@ -10,6 +10,7 @@ Group:		Development/Perl
 Url:		https://search.cpan.org/dist/%{modname}
 Source0:	http://www.cpan.org/modules/by-module/File/File-Find-Rule-Perl-%{modver}.tar.gz
 BuildArch:	noarch
+BuildRequires:	make
 BuildRequires:	perl(inc::Module::Install::DSL)
 BuildRequires:	perl(Parse::CPAN::Meta)
 BuildRequires:	perl(ExtUtils::MakeMaker)
