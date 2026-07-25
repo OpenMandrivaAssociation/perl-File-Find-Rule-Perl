@@ -1,14 +1,14 @@
 %define modname	File-Find-Rule-Perl
-%define modver 1.13
+%define modver 1.16
 
 Summary:	Common rules for searching for Perl things
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	9
+Version:	%{modver}
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{modname}
-Source0:	http://www.cpan.org/modules/by-module/File/File-Find-Rule-Perl-%{modver}.tar.gz
+Url:		https://github.com/karenetheridge/File-Find-Rule-Perl
+Source0:	https://cpan.metacpan.org/authors/id/E/ET/ETHER/File-Find-Rule-Perl-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	make
 BuildRequires:	perl(inc::Module::Install::DSL)
