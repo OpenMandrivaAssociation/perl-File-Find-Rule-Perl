@@ -4,14 +4,13 @@
 Summary:	Common rules for searching for Perl things
 Name:		perl-%{modname}
 Version:	%{modver}
-Release:	1
+Release:	2
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/karenetheridge/File-Find-Rule-Perl
 Source0:	https://cpan.metacpan.org/authors/id/E/ET/ETHER/File-Find-Rule-Perl-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	make
-BuildRequires:	perl(inc::Module::Install::DSL)
 BuildRequires:	perl(Parse::CPAN::Meta)
 BuildRequires:	perl(ExtUtils::MakeMaker)
 BuildRequires:	perl(File::Find::Rule)
