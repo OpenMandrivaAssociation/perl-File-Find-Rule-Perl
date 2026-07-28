@@ -4,7 +4,7 @@
 Summary:	Common rules for searching for Perl things
 Name:		perl-%{modname}
 Version:	%{modver}
-Release:	2
+Release:	3
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/karenetheridge/File-Find-Rule-Perl
@@ -38,7 +38,7 @@ files.
 %makeinstall_std
 
 %files
-%doc README LICENSE Changes
+%doc Changes
 %{perl_vendorlib}/*
 %{_mandir}/man3/*
 
